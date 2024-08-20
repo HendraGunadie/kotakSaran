@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotak Saran</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <h1 class="judulUtama">Kotak saran</h1>
+    <div class="container">
+       
+        <div class="pesanBerhasil">
+            <h1 class="pesan">Pesan Berhasil Di Kirim</h1>
+            <br>
+            <button class="button1" style="--clr: #FFA823" name="buttonRefresh" onclick="window.location.reload()">Kirim Lagi</button>
+        </div>
+        <div class="form-container">
+            <h3 class="judulUtama1">Berikan Saran Kamu</h3>
+        <form name="kotak-saran">
+
+            <label for="nama"></label>
+            <input type="text" name="nama" id="nama" required placeholder="Nama Kamu">
+            <br>
+            <br>
+            <label for="saran"></label>
+            <textarea name="saran" id="saran" placeholder="Saran Dari Kamu"></textarea>
+
+            <br><br>
+
+            <button type="submit" style="--clr: #FFA823" class="button" name="buttonSubmit">Kirim Saran</button>
+        </form>
+
+    </div>
+
+     
+    </div>
+
+    <div class="sosmed">
+        <button class="btnSosmed" style="--clr:orange">  <a  href="https://www.instagram.com/hendragunadiee?igsh=MW0xMnQ0b2NsMm9iNA=="  id="insta">instagram</a></button>
+
+    </div>
+
+
+        <script src="assets/main.js"></script>
+
+        
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz8DAHZS9bxmjVico41DOl0PcaeaH4EqBlOzatT8Ija10c3xgQtqDEgvw7f1O3u2qHrUg/exec';
+        const form = document.forms['kotak-saran']
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+
+         pesanBerhasil.style.display = 'block';
+        container.style.display = 'none';
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
