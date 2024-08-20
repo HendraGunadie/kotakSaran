@@ -16,7 +16,7 @@ body::before{
     left : 0;
     height: 100%;
     width:100%;
-    background-image : url("/assets/pixelBg1.png");
+    background-image : url("/assets/bgForm2.jpg");
     background-size : cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
