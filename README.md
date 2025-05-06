@@ -10,7 +10,7 @@ Semua data saran yang masuk akan secara otomatis **disimpan ke dalam file spread
 ## 🌐 Link Demo
 
 Kamu bisa mencoba versi online-nya secara langsung di sini:  
-🔗 [https://hendragunadie.github.io/kotakSaran/](https://hendragunadie.github.io/kotakSaran/)
+🔗 [Link Website Kotak Saran](https://hendragunadie.github.io/kotakSaran/)
 
 ---
 
