@@ -1,5 +1,7 @@
 # 📮 Website Kotak Saran Digital
 
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=hendragunadie.kotakSaran)
+
 Selamat datang di repositori **Kotak Saran Digital**!  
 Proyek ini merupakan sebuah aplikasi web sederhana yang memungkinkan pengunjung memberikan **saran, kritik, atau masukan** secara langsung melalui sebuah formulir online.  
 
